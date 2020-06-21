@@ -1,0 +1,281 @@
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+        color: black;
+    text-decoration: none;
+    }
+}
+
+header {
+    z-index: 2;
+    position: fixed;
+    width:100%;
+    background-color: rgba(32, 12, 48, 0.822);
+    display: flex;
+    justify-content: center;
+    .container {
+        color: wheat;
+        width:70%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+            font-family: 'Merriweather', serif;
+            font-size:1.3rem;
+            a {
+                color:wheat;
+            }
+        }
+        .right {
+            font-family: 'Lobster', cursive;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            li {
+                padding: 10px;
+                border-radius: 5px;
+                a {
+                    color: wheat;
+                }
+                transition: all 1s ease-out;
+            }
+    
+            li:hover {
+                background-color: rgba(198, 168, 221, 0.822);
+                a {
+                    color: black;
+                }
+                transition: all 1s ease-out;
+            }
+        }
+    }
+    
+}
+
+#content-intro-home {
+    background: url("/dist/src/home1.jpg") no-repeat center center/cover;
+    overflow: hidden;
+    .container {
+        margin-top: 5rem ;
+        overflow: hidden;
+        * {
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            font-size: 1.8rem;
+            color: rgba(122, 45, 185, 0.822);
+            padding:3rem 0 1rem;
+            font-family: 'Lobster', cursive;
+        }
+        .introduction {
+            width: 80%;
+            color: rgb(201, 197, 197);;
+            font-size:1rem;
+            padding-bottom: 3rem;
+        }
+        .clickbuttom{
+            margin: 0 0 3rem;
+            padding:0.5rem 1rem;
+            font-size:1rem;
+            font-weight: bolder;
+            border-radius: 2px;
+            font-family: 'Lobster', cursive;;
+            background-color: grey;
+            transition: all 1s ease-out;
+            &:hover {
+                background-color: rgb(78, 78, 78);
+                a {
+                    color:rgb(204, 185, 149);
+                }
+                transition: all 0.5s ease-out;
+            }
+        }
+    }
+}
+
+#content-2-home {
+    text-align: center;
+     @media (min-width: 500px) {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        .whyus, .healthcard {
+            width:50%;
+            height:50rem;
+        }
+     }
+
+     @media (max-width: 500px) {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+    .contentmain {
+        margin:3rem auto 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;            
+        height: 80%;
+        width:80%;
+        box-shadow:0px 0px 10px #000;
+        .photo{
+            margin: 2rem 0 1rem;
+            position: relative;
+            width:30vw;
+            height:30vw;
+            border-radius: 100%;
+        }
+        .title { 
+            font-family: 'Merriweather', serif;
+            font-size:1.2rem;
+        }
+        .content {
+            padding:1rem 2rem;
+        }
+        .clickme {
+            margin: 3rem 0 3rem 0;
+            padding: 0.8rem 1.2rem;
+            background-color: grey;
+            a{  
+                color: white;
+                font-family: 'Cookie', cursive;
+                font-weight: 900;
+                font-size:1.2rem;
+            }
+        }
+        .clickme:hover {
+            background-color: wheat;
+            a{
+                color:brown;
+            }
+        }
+    }
+    .whyus{
+       .photo {
+            background: url("/dist/src/home2.jpg")no-repeat center center/cover;
+        }
+    }    
+
+    .healthcard{
+        .photo {
+            background: url("/dist/src/home3.jpg")no-repeat center center/cover;
+        }
+    }
+
+}
+
+#content-3-home{
+    @media (min-width: 500px){
+        position: relative;
+        top:-3rem;
+        width:90%;
+    }
+
+    @media (max-width: 500px){
+        position: relative;
+        margin-bottom: 6rem;
+        top:3rem;
+        width:80%;
+    }
+
+    text-align: center;
+    background:url("/dist/src/home4.jpg") no-repeat center center/cover;
+    color:rgb(204, 185, 185);
+    margin:0 auto;
+    box-shadow:0px 0px 5px 8px #000;
+    .title {
+        padding-top: 1rem;   
+        font-family: 'Cookie', cursive;
+        font-size: 2rem;
+    }
+    .content{
+        padding: 0.5rem 1rem 1.5rem 1rem;
+    }
+}
+
+#contect-finish-home {
+    text-align: center;
+
+    @media (min-width: 500px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .location, .time, .contectus {
+            width: 33.33%;
+            box-shadow:0px 0px 10px #000;
+        }
+        .location, .contectus {
+            background-color: wheat;
+        }
+        .time {
+            background-color:pink;
+        }
+        .title {
+            margin-top: 1.2rem;   
+            font-family: 'Cookie', cursive;
+            font-size: 1.5rem;
+        }
+        .content {
+            font-family: 'Merriweather', serif;
+            padding:0.2rem 0.8rem 2rem 0.8rem;
+        }
+        
+    }
+
+    @media (max-width: 500px) {
+        .location, .time, .contectus{
+            background-color: wheat;
+            box-shadow:inset 2px 2px 5px #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .time {
+            background-color: pink;
+        }
+        .title {
+                margin-top:0.8rem;   
+                font-family: 'Cookie', cursive;
+                font-size:2rem;
+        }
+        .content {
+                font-family: 'Merriweather', serif;
+                padding:0.2rem 0.8rem 2rem 0.8rem;
+        }
+    }
+
+    i {
+        font-size: 2rem;
+        margin-top:1rem;
+    }
+}
+
+footer {
+    background-color: rgb(66, 64, 64);
+    height: 3rem;
+    div {
+        color: #f5deb2a4;
+        font-size: 0.8rem;
+       text-align: center;
+       line-height: 3rem;
+    }
+}
