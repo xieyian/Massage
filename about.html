@@ -3,19 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>About</title>
+    <script>
+        $(document).ready(function(){
+            var par = $('ul');
+            var width = $('header').width();
+            if (width <= 520){
+                $(par).hide();
+                $(".pressme").click(function(){
+                $("ul").toggle(500);
+            });
+            }
+        });
+    </script>
 </head>
 <body>
-    <div>Our Massage has combined the techniques of our massage and eastern massage to give you the most rejuvenating massage that will help your body, mind and spirit to revive. To help maintain your good health, we recommend clients to have regular massages. 
-        our team operated the New School for Massage for nearly 10 years. The owner has been in the massage therapy field for nearly 30 years. We understand that a good massage treatment involves hospitality, service, and massage skills that are grounded in science but delivered as art. 
+    <header>
+        <div class="container">
+            <div class="left"><a href="index.html">Calming Massage</a></div>
+            <div class="header-button">
+                <div class="pressme"><i class="fa fa-bars"></i></div> 
+                <ul class="right no-bullets">
+                    <li class="index"><a href="index.html">Home</a></li>
+                    <li class="about"><a href="about.html">About</a></li>
+                    <li class="reservations"><a href="price.html">Price</a></li>
+                    <li class="contect"><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="content-title-about"><div class="title">About Us</div></div>
+    <div id="content-1-about">
+        <div class="photos-about"></div>
+        
+        <div>
+            <h2>About our Massage</h2>
+        Our Massage has combined the techniques of our massage and eastern massage to give you the most rejuvenating massage that will help your body, mind and spirit to revive. To help maintain your good health, we recommend clients to have regular massages. 
+        </div>
+        <div>
+        Our team operated the New School for Massage for nearly 10 years. The owner has been in the massage therapy field for nearly 30 years. We understand that a good massage treatment involves hospitality, service, and massage skills that are grounded in science but delivered as art. 
+        </div>
        
-       
-       
-       Comfortable, friendly setting
-       We are not a stuffy spa, neither a sterile clinic. We offer a warm and friendly setting that caters to inner peace. 
-       We have several rooms with different settings so that you will feel completely relaxed and comfortable. A soothing light ensemble of ambient music gently flows through the massage room to create enhance your massage experience.
-       
-       Convenient scheduling
-       We are open for appointments seven days a week. You can schedule your appointment online or by calling us at 11111111. </div>
-</body>
+        <div>
+            <h2>Good Envinment</h2>
+        Comfortable, friendly setting
+        We are not a stuffy spa, neither a sterile clinic. We offer a warm and friendly setting that caters to inner peace.
+        </div>
+        <div> 
+        We have several rooms with different settings so that you will feel completely relaxed and comfortable. A soothing light ensemble of ambient music gently flows through the massage room to create enhance your massage experience.
+        </div>
+        
+        <div>
+            <h2>Health Card</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magnam voluptate error voluptates ab atque cupiditate, totam quisquam quia maxime consequatur nulla nesciunt nihil inventore, assumenda repellendus eaque provident numquam exercitationem ut amet dolorem doloremque nam accusamus? Dolor dolorem facilis eius laudantium esse officiis voluptas saepe maiores magni distinctio. Sequi!
+        </div>
+        <div>
+            <h2>Discount And Voucher</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nisi. Labore numquam obcaecati repellat debitis sit repellendus similique quasi aliquid voluptates quis cumque odio molestiae corrupti ab iusto, possimus magnam asperiores! Incidunt exercitationem aliquid, nobis aperiam quia fugit dignissimos sed!
+        </div>
+        <div class="contentfinish">
+            Convenient scheduling
+            We are open for appointments seven days a week. You can schedule your appointment online or by calling us at 0414210858. 
+            </div>
+    </div>
+
+    <footer>
+        <div>© Calming Massage. ALL RIGHTS RESERVED.</div>
+    </footer>
+
+    </body>
 </html>

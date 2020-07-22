@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
-    <link rel="stylesheet" href="dist/css/style.min.css">
-    <title>Massage</title>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Calming Massage</title>
+    <script>
+        $(document).ready(function(){
+            var par = $('ul');
+            var width = $('header').width();
+            if (width <= 520){
+                $(par).hide();
+                $(".pressme").click(function(){
+                $("ul").toggle(500);
+            });
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="left"><a href="index.html">Charming Massage</a></div>
-            <ul class="right no-bullets">
-                <li class="home"><a href="index.html">Home</a></li>
-                <li class="about"><a href="about.html">About</a></li>
-                <li class="reservations"><a href="#">Price</a></li>
-                <li class="contect"><a href="#">Contect</a></li>
-            </ul>
+            <div class="left"><a href="index.html">Calming Massage</a></div>
+            <div class="header-button">
+                <div class="pressme"><i class="fa fa-bars"></i></div> 
+                <ul class="right no-bullets">
+                    <li class="index"><a href="index.html">Home</a></li>
+                    <li class="about"><a href="about.html">About</a></li>
+                    <li class="reservations"><a href="price.html">Price</a></li>
+                    <li class="contect"><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+
     <div id="content-intro-home">
         <div class="container">
             <div class="title">Enjoy Your Massage</div>
@@ -27,6 +45,13 @@
             <div class="clickbuttom"><a href="about.html">Learn More About Me</a></div>
         </div>
     </div>
+
+    <div id="contectme-home">
+        <div class="clicktocontect"><a href="tel:0414210858"><i class="fas fa-phone"></i>0414210858</a></div>
+
+        <div class="clicktocontect"><a href="mailto: calmingchinesemassage@hotmail.com"><i class="fas fa-envelope"></i>Send Email</a></div>
+    </div>
+    
 
     <div id="content-2-home">
         <div class="whyus">
@@ -58,35 +83,37 @@
 
     <div id="content-4-home">
         <div class="map">
-
+            <a href="https://goo.gl/maps/C6eJeymPGncBnwLNA"></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.39660302068!2d138.63042271554662!3d-34.921589081893735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0c95a74b27b31%3A0x4be43a98bb1097b9!2s120A%20The%20Parade%2C%20Norwood%20SA%205067!5e0!3m2!1szh-CN!2sau!4v1592891270562!5m2!1szh-CN!2sau" width="100%" height="300vw" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
+            
     </div>
 
     <div id="contect-finish-home"> 
         <div class="location">
             <i class="fas fa-street-view"></i>
             <div class="title">Location</div>
-            <div class="content">120A The Prade, Norwood SA 5067 </div>
+            <div class="content">120A The Prade, Norwood SA 5067</div>
         </div>
         <div class="time">
             <i class="far fa-clock"></i>
             <div class="title">Open Time</div>
             <div class="content">
                 <div>Open 7 days</div>
-                <div>9AM-8PM</div></div>
+                <div>10AM-8PM</div></div>
             </div>
         <div class="contectus">
             <i class="fas fa-phone"></i>
                 <div class="title">Contact Us</div>                
                     <div class="content">
-                        <div>Phone: 0414210858</div> <div>Email: charmingmassage@hotmail.com</div>
+                        <div>Phone: 0414210858</div> <div>Email: calmingchinesemassage@hotmail.com</div>
                 </div>
             </div>
     </div>
     
 
     <footer>
-        <div>© chinese message. ALL RIGHTS RESERVED.</div>
+        <div>© Calming Massage. ALL RIGHTS RESERVED.</div>
     </footer>
 </body>
 </html>

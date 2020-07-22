@@ -1,0 +1,18 @@
+#price {
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 5rem 0 3rem;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    img {
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 5px;
+        width: 90vw;
+        height:150vw;
+    }
+}

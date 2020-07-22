@@ -1,0 +1,27 @@
+#content-title-about {
+    background: url("https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80") no-repeat center/cover;
+    .title {
+        padding: 10rem 0rem 5rem 52vw;
+        font-family: 'Merriweather', serif;
+        font-size: 2rem;
+        color: brown;
+    }
+}
+
+#content-1-about {
+    padding: 0 10vw 3rem;
+    div {
+        padding-top:1rem;
+        h2 {
+            color:orange;
+            font-family: 'Merriweather', serif;
+            padding: 0.6rem 0;
+        }
+    }
+    .contentfinish {
+        padding-top:2rem;
+        font-family: 'Merriweather', serif;
+        font-size: large;
+    }
+    
+}

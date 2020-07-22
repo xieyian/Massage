@@ -1,3 +1,7 @@
+@import 'about';
+@import 'contect';
+@import 'price';
+
 ul.no-bullets {
     list-style-type: none;
     margin: 0;
@@ -8,7 +12,9 @@ ul.no-bullets {
     margin: 0;
     padding: 0;
 }
-
+body {
+    min-width: 200px;
+}
 a {
     color: black;
     text-decoration: none;
@@ -21,18 +27,70 @@ a {
 header {
     z-index: 2;
     position: fixed;
-    width:100%;
-    background-color: rgba(32, 12, 48, 0.822);
     display: flex;
     justify-content: center;
+    width:100%;
+    background-color: rgba(32, 12, 48, 0.822);
     .container {
+        width:100%;
         color: wheat;
-        width:70%;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+         @media (max-width: 520px) {
+             display: flex;
+             flex-direction: row-reverse;
+             justify-content: center;
+            .left {
+                position: absolute;
+                padding:1rem;
+                text-align: center;
+            }
+            .header-button {
+                width:100%;
+                margin-right: auto;
+                padding:1.3rem;
+            }
+            
+            ul {
+                padding:1rem 1rem 0;
+                margin-top: 1rem;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                li {
+                    border-top: 1px solid white;
+                    padding:10px;
+                    text-align: center;
+                    a {
+                        display: block;
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                
+            }
+         }
+        @media (min-width: 521px) {
+            .pressme {
+                display:none;
+            }
+            width:70%;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            button { 
+                    display: none;
+            }
+            .right{
+                flex-direction: row;
+                justify-content: end;
+                li {
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
         .left {
             font-family: 'Merriweather', serif;
             font-size:1.3rem;
@@ -43,11 +101,9 @@ header {
         .right {
             font-family: 'Lobster', cursive;
             display: flex;
-            flex-direction: row;
-            justify-content: end;
+            
             li {
-                padding: 10px;
-                border-radius: 5px;
+                
                 a {
                     color: wheat;
                 }
@@ -68,6 +124,8 @@ header {
 
 #content-intro-home {
     background: url("/dist/src/home1.jpg") no-repeat center center/cover;
+     transition: all 3s ease-in-out 1s;
+    height:100%;
     overflow: hidden;
     .container {
         margin-top: 5rem ;
@@ -81,7 +139,7 @@ header {
         align-items: center;
         .title {
             font-size: 1.8rem;
-            color: rgba(122, 45, 185, 0.822);
+            color:orange;
             padding:3rem 0 1rem;
             font-family: 'Lobster', cursive;
         }
@@ -111,9 +169,69 @@ header {
     }
 }
 
+#contectme-home{
+    display: flex;
+    @media (min-width: 521px) {
+        margin-top: 3rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .clicktocontect {
+            width: 40%;
+        }
+    }
+
+    @media (max-width: 521px) {
+        margin: 0 auto;
+        width:80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .clicktocontect{
+            margin-top:2rem;
+            width: 80%;
+        }
+    }
+    
+    .clicktocontect{
+        background-color: rgb(77, 75, 75);
+        text-align: center;
+        line-height: 3rem;
+        border-radius: 10px;
+        a {
+            color:rgb(255, 166, 0);
+            height:3vw;
+            font-family: 'Lobster', cursive;
+            font-size: 1.8rem;
+            font-weight: bolder;
+            i {
+                padding-right: 1rem;
+            }
+        } 
+    }
+
+    .clicktocontect:hover {
+        background-color: rgb(255, 190, 68);
+        text-align: center;
+        line-height: 3rem;
+        border-radius: 10px;
+        a {
+            color:brown;
+            height:3vw;
+            font-family: 'Lobster', cursive;
+            font-size: 1.8rem;
+            font-weight: bolder;
+            i {
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+
 #content-2-home {
     text-align: center;
-     @media (min-width: 500px) {
+     @media (min-width: 521px) {
         display:flex;
         flex-direction: row;
         align-items: center;
@@ -123,7 +241,7 @@ header {
         }
      }
 
-     @media (max-width: 500px) {
+     @media (max-width: 520px) {
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -177,20 +295,20 @@ header {
 
     .healthcard{
         .photo {
-            background: url("/dist/src/home3.jpg")no-repeat center center/cover;
+            background: url("/dist/src/home.jpg")no-repeat center center/cover;
         }
     }
 
 }
 
 #content-3-home{
-    @media (min-width: 500px){
+    @media (min-width: 521px){
         position: relative;
         top:-3rem;
         width:90%;
     }
 
-    @media (max-width: 500px){
+    @media (max-width: 520px){
         position: relative;
         margin-bottom: 6rem;
         top:3rem;
@@ -212,10 +330,19 @@ header {
     }
 }
 
+#content-4-home {
+    padding: 0 2rem;
+    .map { 
+        margin:1rem auto 5rem auto;
+        box-shadow:0px 0px 5px 10px #000;
+    }
+    
+
+}
+
 #contect-finish-home {
     text-align: center;
-
-    @media (min-width: 500px) {
+    @media (min-width: 521px) {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -236,12 +363,13 @@ header {
         }
         .content {
             font-family: 'Merriweather', serif;
-            padding:0.2rem 0.8rem 2rem 0.8rem;
+            padding:0.2rem 0.8rem 2rem 1rem;
+            overflow: auto;
         }
         
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 520px) {
         .location, .time, .contectus{
             background-color: wheat;
             box-shadow:inset 2px 2px 5px #000;
@@ -270,6 +398,10 @@ header {
 }
 
 footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: rgb(66, 64, 64);
     height: 3rem;
     div {

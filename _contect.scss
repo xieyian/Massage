@@ -1,0 +1,106 @@
+#contect {
+    overflow: hidden;
+    padding-top: 6rem;
+    display: flex;
+    @media (min-width: 521px) {
+        img {
+            width:50%;
+            height: auto;
+        }
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    @media (max-width: 520px) {
+        img {
+            width:80%;
+            height: 50%;
+        }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .content-contect {
+            margin-top: 2rem;
+        }
+    }
+    .content-contect {
+        overflow: hidden;
+        text-align: center;
+        padding: 0 1.2rem；
+        h1 {
+            font-size: xx-large;
+            font-family: 'Merriweather', serif;
+            font-weight: bolder;
+            color: orange;
+        }
+        .title {
+            margin-top: 1.5rem;
+            font-size: x-large;
+            font-weight: bolder;
+            font-family: 'Merriweather', serif;
+        }
+        .content {
+             margin: auto;
+            min-width: 280px;
+            overflow: auto;
+            margin-top: 1rem;
+            font-size: larger;
+        }
+    }
+    
+}
+
+#opentime {
+    overflow: hidden;
+    margin: 2rem 0 5rem 0;
+    display: flex;
+    @media (min-width: 521px) {
+        img {
+            width:50%;
+            height: auto;
+            order: 2;
+        }
+        .opentime-div {
+            order:1;
+        }
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    @media (max-width: 520px) {
+        img {
+            width:80%;
+            height: 50%;
+            order:1;
+        }
+        .opentime-div {
+            order:2;
+        }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: x-large;
+        font-weight: bolder;
+        font-family: 'Merriweather', serif;
+    }
+    .content {
+        text-align: center;
+        width: 100%;
+        margin-top: 1rem;
+        font-size: larger;
+    }
+    .content > div {
+        min-width: 255px;
+        overflow: auto;
+        padding-top: 0.5rem;
+        span {
+            padding-left:1rem;
+            color:orange;
+        }
+    }
+
+}

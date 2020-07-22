@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Price</title>
+    <script>
+        $(document).ready(function(){
+            var par = $('ul');
+            var width = $('header').width();
+            if (width <= 520){
+                $(par).hide();
+                $(".pressme").click(function(){
+                $("ul").toggle(500);
+            });
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left"><a href="index.html">Calming Massage</a></div>
+            <div class="header-button">
+                <div class="pressme"><i class="fa fa-bars"></i></div> 
+                <ul class="right no-bullets">
+                    <li class="index"><a href="index.html">Home</a></li>
+                    <li class="about"><a href="about.html">About</a></li>
+                    <li class="reservations"><a href="price.html">Price</a></li>
+                    <li class="contect"><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="price">
+        <img src="/dist/src/price.jpg" alt="">
+    </div>
+
+    <footer>
+        <div>© Calming Massage. ALL RIGHTS RESERVED.</div>
+    </footer>
+    </body>
+</html>
